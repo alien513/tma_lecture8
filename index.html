@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Lecture 8 Homework - Olena Kapustina">
+    <meta name="keywords" content="Homework, Olena Kapustina">
+    <meta name="author" content="Olena Kapustina">
+    <meta name="referrer" content="no-referrer">
+
+    <title>$(filmName)</title>
+    <style>
+        body {
+            background-color: rgb(47, 46, 46);
+        }
+
+        .box {
+            padding: 2px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+        }
+
+        img {
+            max-height: 300px;
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .info {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            background-color: rgb(47, 46, 46);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="$(logo)" alt="$(filmName)" />
+            <img src="$(frame1)" alt="$(filmName) Frame 1" />
+            <img src="$(frame2)" alt="$(filmName) Frame 2" />
+            <div class="info">
+                    <h2>$(filmName)</h2>
+                    <p><b>Production:</b> $(prodYears)</p>
+                    <p><b>Genre:</b> $(genre)</p>
+                    <p><b>Creator:</b> $(creator)</p>
+                    <p><b>Stars:</b> $(stars)</p>
+                    <p>$(desc)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
